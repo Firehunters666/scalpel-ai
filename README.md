@@ -48,7 +48,7 @@ Upload your Excel file and explore the reports.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 | File                    | Purpose                                                                 |
 |-------------------------|-------------------------------------------------------------------------|
@@ -62,7 +62,7 @@ Upload your Excel file and explore the reports.
 
 ---
 
-## 🖥️ How to Use the App
+## How to Use the App
 
 1. **Upload your file** – click the “Browse files” button and select your ledger Excel.
 2. **Validation** – the app automatically checks global balance and shows a success message.
@@ -77,7 +77,7 @@ Upload your Excel file and explore the reports.
 
 ---
 
-## 🔧 Customising Account Classification
+# Customising Account Classification
 
 The app uses **account number ranges** and **keywords** to decide if an account is Revenue, COGS, OpEx, Asset, or Liability.  
 If your accounts are mis‑classified, edit the `classify_account()` function inside `aura_engine.py` or directly in `main_consolidated.py` (look for the function near the top).  
@@ -85,28 +85,7 @@ You can add more keywords or change number ranges to match your chart of account
 
 ---
 
-## 🧪 Testing with Sample Data
-
-If you don’t have your own ledger, you can use the sample files provided in the original repository (or create a small test Excel with at least two rows: one debit, one credit).
-
----
-
-## 🌐 Deploying to the Cloud (Share with Investors)
-
-### Option A: Streamlit Community Cloud (easiest)
-1. Push your code to **GitHub** (you already have).
-2. Go to [streamlit.io/cloud](https://streamlit.io/cloud), sign in with GitHub.
-3. Click **New app**, select your repo, branch, and the main file (`main_consolidated.py`).
-4. Click **Deploy**. Your app will be live at `https://your-app.streamlit.app`.
-
-### Option B: Hugging Face Spaces
-- Create a new Space → choose **Streamlit** SDK.
-- Upload `main_consolidated.py` and `requirements.txt`.  
-- The Space will build automatically.
-
----
-
-## 🤖 Enabling the AI Chat (Scalpel AI)
+## Enabling the AI Chat (Scalpel AI)
 
 By default the AI tab shows a mock response. To enable real AI:
 - **Groq (free)** – sign up at [console.groq.com](https://console.groq.com), get an API key.
@@ -121,7 +100,7 @@ The app will then answer natural language questions about your current P&L and T
 
 ---
 
-## ❓ Troubleshooting
+## Troubleshooting
 
 | Problem                                  | Likely fix                                                             |
 |------------------------------------------|------------------------------------------------------------------------|
@@ -132,15 +111,8 @@ The app will then answer natural language questions about your current P&L and T
 
 ---
 
-## 📄 License
-
-This project is open‑source and available under the MIT License.
-
----
-
-## 🙌 Acknowledgements
+## Acknowledgements
 
 Built with Streamlit, pandas, and Plotly. Inspired by modern, deterministic accounting engines.
 
 **Made for investors who want to see a real, working finance automation platform.**
-```
